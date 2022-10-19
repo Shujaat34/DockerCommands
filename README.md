@@ -116,7 +116,7 @@ Example. ```docker system df```
 
 ## Note
 
-### The Dockerfile content
+### The Dockerfile content	
 -------------------------------------------------------------------------------------------------
 FROM openjdk:8   ==> defines jdk version                                                         |
 EXPOSE 8080      ==> defines the port                                                            |
@@ -124,13 +124,13 @@ ADD target/spring-boot-app.jar spring-boot-app.jar    ==> The jar name of the ap
 ENTRYPOINT ["java","-jar","/spring-boot-app.jar"]                                                |
 -------------------------------------------------------------------------------------------------
 
->To make image of spring boot application run the above Dockerfile by using below commands.
+> To make image of spring boot application run the above Dockerfile by using below commands.
 
-### 1. ``` docker build -t <spring-boot-application-jar-name> <root>``` which is a dot
-### ```docker build -t spring-boot-app.jar . ```
+1. ``` docker build -t <spring-boot-application-jar-name> <root>``` which is a dot
+```docker build -t spring-boot-app.jar . ```
 
-### 2.        ```docker run -p <localport>:<containerport> -d <image-repository-url>```
-### Example:  ```docker run -p 8282:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE```
+2.        ```docker run -p <localport>:<containerport> -d <image-repository-url>```
+Example:  ```docker run -p 8282:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE```
 
 
 
