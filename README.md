@@ -38,11 +38,11 @@ Example ``` docker container ls -a  ```
 > 8. To check how many images are on the machine.
 Example ``` docker images ```
 
-> 9. docker container stop <first-four-characters-id>
+9. ```docker container stop <first-four-characters-id>```
 Example ``` docker container stop a09w ```
 
 > To pull something from docker-repository
-10.  ``` docker pull <docker-repository>
+10.  ``` docker pull <docker-repository>```
 Example ``` docker pull mysql ```
 
 
