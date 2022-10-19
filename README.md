@@ -7,13 +7,14 @@ Container : When Image is running.
 one image can contain multiple projects.
 
 ==============================================
-1.	  ```docker run <image-repository-url>```
+> Run Docker in command prompt
+1. ```docker run <image-repository-url>```
 Example ```docker run in28min/todo-rest-api-h2:1.0.0.RELEASE```
 
 Once the <containerport> is discovered by running command 1 host that port to your local machine port by using following command.
 
-2.        docker run -p <localport>:<containerport> <image-repository-url>
- 	  docker run -p 8282:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE
+2.```docker run -p <localport>:<containerport> <image-repository-url>```
+Example ```docker run -p 8282:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE```
 
 If we want to run the image in background instead of command prompt then we use following command to detach it from command prompt.
 
