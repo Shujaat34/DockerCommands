@@ -128,8 +128,8 @@ ENTRYPOINT ["java","-jar","/spring-boot-app.jar"]
 1. ``` docker build -t <spring-boot-application-jar-name> <root>``` which is a dot
 ```docker build -t spring-boot-app.jar . ```
 
-2.        ```docker run -p <localport>:<containerport> -d <image-repository-url>```
-Example   ```docker run -p 8282:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE```
+2. ``` docker run -p <localport>:<containerport> -d <image-repository-url> ```
+Example ``` docker run -p 8282:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE ```
 
 
 
