@@ -74,18 +74,18 @@ Example ```  docker container unpause as31 ```
 
 
 > To see the complete details of container
-16.  	```  docker image inspect <container-id> ```  (To see container ids run. ```docker container ls```)
+16.  	```docker image inspect <container-id>``` To see container ids run. ```docker container ls```
 Example ```  docker image inspect as31 ```
 
 > 17.To remove all stopped containers 
 Example ```  docker container prune ```
 
 > 18. To see the logs of a specific container.
-  ```docker container logs -f <container-id>``` (To see container ids run. ```docker container ls```)
+  ```docker container logs -f <container-id>``` To see container ids run. ```docker container ls```
 Example:  ```docker container logs -f q2w1```
 
 > 19. To stop a specific container. This is a normal shutdown after shutting other services down.
-```       docker container stop <container-id> ``` (To see container ids run. ```docker container ls```)
+```       docker container stop <container-id> ``` To see container ids run. ```docker container ls```
 Example  ``` docker container stop q2w1```
 
 > 20. To stop a specific container. This is a imediate shutdown without shutting other services down.
@@ -98,7 +98,7 @@ we use below command.Even if it is closed manually when we restart the docker it
 Example ```  docker run -p 8282:5000 -d --restart=always in28min/todo-rest-api-h2:1.0.0.RELEASE```
 
 > 22.   To see what are the jars or files running in the container.
-	```  docker top <container-id> ```   (To see container ids run. ```docker container ls```)
+	```  docker top <container-id> ```   To see container ids run. ```docker container ls```
 Example  ```docker top 2qw2```
 
 > 23.   To check the CPU% used and memory consumed by container.
