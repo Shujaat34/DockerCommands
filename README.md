@@ -117,11 +117,11 @@ Example. ```docker system df```
 ## Note
 
 ### The Dockerfile content	
-<code>
+
 FROM openjdk:8   ==> defines jdk version                                                         
 EXPOSE 8080      ==> defines the port                                                            
 ADD target/spring-boot-app.jar spring-boot-app.jar    ==> The jar name of the application        
-ENTRYPOINT ["java","-jar","/spring-boot-app.jar"] </code>                                               
+ENTRYPOINT ["java","-jar","/spring-boot-app.jar"]                                               
 
 > To make image of spring boot application run the above Dockerfile by using below commands.
 
