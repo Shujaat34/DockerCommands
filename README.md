@@ -74,7 +74,7 @@ Example ```  docker container unpause as31 ```
 
 
 > To see the complete details of container
-16.  	```docker image inspect <container-id>``` To see container ids run. ```docker container ls```
+16.  	`docker image inspect <container-id>` To see container ids run. `docker container ls`
 Example ```  docker image inspect as31 ```
 
 > 17.To remove all stopped containers 
@@ -117,12 +117,12 @@ Example. ```docker system df```
 ## Note
 
 ### The Dockerfile content	
-
+```
 FROM openjdk:8   ==> defines jdk version                                                         
 EXPOSE 8080      ==> defines the port                                                            
 ADD target/spring-boot-app.jar spring-boot-app.jar    ==> The jar name of the application        
 ENTRYPOINT ["java","-jar","/spring-boot-app.jar"]                                               
-
+```
 > To make image of spring boot application run the above Dockerfile by using below commands.
 
 1. ``` docker build -t <spring-boot-application-jar-name> <root>``` which is a dot
