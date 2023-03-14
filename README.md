@@ -69,12 +69,12 @@ Example ```  docker container pause as31 ```
 
 
 > To UnPause a running image(container).
-15.   ``` 	  docker container unpause <container-id>```
+15.   ``` docker container unpause <container-id>```
 Example ```  docker container unpause as31 ```
 
 
 > To see the complete details of container
-16.  	`docker image inspect <container-id>` To see container ids run. `docker container ls`
+16.  	``` docker image inspect <container-id> ``` (To see container ids run. ```docker container ls```)
 Example ```  docker image inspect as31 ```
 
 > 17.To remove all stopped containers 
