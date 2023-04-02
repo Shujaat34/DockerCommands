@@ -123,13 +123,32 @@ EXPOSE 8080      ==> defines the port
 ADD target/spring-boot-app.jar spring-boot-app.jar    ==> The jar name of the application        
 ENTRYPOINT ["java","-jar","/spring-boot-app.jar"]                                               
 ```
-> To make image of spring boot application run the above Dockerfile by using below commands.
+> Method 1: To make image of spring boot application on local machine run the above Dockerfile by using below commands. Note: The Dockerfile.yml File should be there in the project, like a properties file.
 
 1. ``` docker build -t <spring-boot-application-jar-name> <root>``` which is a dot
 ```docker build -t spring-boot-app.jar . ```
 
 2. ``` docker run -p <localport>:<containerport> -d <image-repository-url> ```
 Example ``` docker run -p 8282:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE ```
+
+
+> Method 2: To make image of spring boot application on local machine do the following steps.
+Put following configuration in `pom.xml` file inside `plugin` tag.
+
+```
+<configuration>
+    <image>
+	<name>codewithbukhari/${project.artifactId}:${project.version}</name>
+    </image>
+    <pullPolicy>IF_NOT_PRESENT</pullPolicy>
+</configuration>
+```
+Then Run the below Maven Command to make Docker image. Make sure Docker is running and login with Dockerhub.
+
+`mvn spring-boot:build-image -DskipTests`
+
+
+
 
 
 
